@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>রকস্টার কনসার্ট - সম্পূর্ণ এডমিন কন্ট্রোল</title>
+    <title>রকস্টার কনসার্ট </title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -985,10 +985,8 @@
         <!-- হোম ট্যাব -->
         <section id="home" class="tab-content active">
             <h2 class="section-title">রকস্টার কনসার্ট</h2>
-            <p style="text-align: center; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                বাংলাদেশের সবচেয়ে বড় রক কনসার্টে আপনাকে স্বাগতম! বিশ্বখ্যাত শিল্পীদের সাথে রক সঙ্গীতের জগতে ডুবে যান।
-            </p>
-            
+            <p style="text-align: center; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;"
+         p/>   
             <!-- চলমান প্রোগ্রাম -->
             <h3 class="ticket-section-title">চলমান প্রোগ্রাম</h3>
             <div id="ongoingTicketTypes" class="ticket-types">
@@ -1048,7 +1046,7 @@
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="email">ইমেইল (ঐচ্ছিক)</label>
+                            <label class="form-label" for="email">ইমেইল</label>
                             <input type="email" id="email" class="form-control" placeholder="you@example.com">
                         </div>
                         
@@ -1078,7 +1076,7 @@
                         <div id="paymentInfo" class="payment-info">
                             <h4 id="paymentMethodTitle">বিকাশ পেমেন্ট নির্দেশনা</h4>
                             <div id="paymentDetails">
-                                বিকাশ নম্বর: <strong id="bkashNumber">০১৭১২-৩৪৫৬৭৮</strong><br>
+                                বিকাশ নম্বর: <strong id="bkashNumber">018239630097</strong><br>
                                 টাকা পাঠানোর পর অবশ্যই ট্রানজেকশন আইডি দিন
                             </div>
                         </div>
@@ -1335,7 +1333,7 @@
                     
                     <div class="ticket-collection-info">
                         <h3>ভেন্যু থেকে টিকিট সংগ্রহ</h3>
-                        <p>আপনার টিকিট ভেরিফাই হওয়ার পর আপনি ভেন্যুর নির্দিষ্ট বুথ থেকে আপনার টিকিট সংগ্রহ করতে পারবেন।</p>
+                        <p>আপনার টিকিট ভেরিফাই হওয়ার পর আপনি ভেন্যুর নির্দিষ্ট বুথ থেকে প্রবেশ করতে পারবেন।</p>
                         <p><strong>সময়:</strong> কনসার্ট শুরুর ৩ ঘন্টা আগে থেকে শুরু</p>
                         <p><strong>স্থান:</strong> <span id="collectionVenue">আর্মি স্টেডিয়াম, প্রধান গেটের পাশে টিকিট কাউন্টার</span></p>
                     </div>
@@ -1425,7 +1423,7 @@
                 // ডিফল্ট এডমিন ক্রেডেনশিয়াল
                 const defaultCredentials = {
                     username: 'admin',
-                    password: 'admin123'
+                    password: 'sami2290@'
                 };
                 saveAdminCredentials(defaultCredentials);
                 return defaultCredentials;
@@ -1453,8 +1451,8 @@
         function loadPaymentConfig() {
             const configJSON = localStorage.getItem(PAYMENT_CONFIG_KEY);
             return configJSON ? JSON.parse(configJSON) : {
-                bkash: "০১৭১২-৩৪৫৬৭৮",
-                nagad: "০১৭৯৮-৭৬৫৪৩২"
+                bkash: "01823963097",
+                nagad: "01823963097"
             };
         }
         
